@@ -36,7 +36,7 @@ nav > div > span
     padding: 10px 25px 10px 25px;
 }
 
-nav > div > span:hover
+nav > div > span:hover, span#active
 {
     background-color: rgba(167, 73, 0, 0.2);
     border-radius: 20px;
@@ -253,4 +253,68 @@ footer > img
     margin: auto;
     width: 100px;
     height: 100px;
+}
+
+thetitle
+{
+    color:rgb(167, 73, 0);
+    text-align: center;
+    display: block;
+    margin-top: 9%;
+    font-size: 40px;
+}
+
+people
+{
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+person
+{
+    display: flex;
+    margin: auto;
+    width: 64%;
+    padding: 70px 35px 70px 35px;
+    background-color: rgba(167, 73, 0, 0.05);
+    border-radius: 30px 30px 30px 30px;
+    margin-top:30px;
+}
+
+person:nth-child(even)
+{
+    background-color: rgba(100, 100, 100, 0.05);
+}
+
+description:nth-child(odd)
+{
+    text-align: right;
+    color:#a74800
+}
+
+photo
+{
+    display: inline;
+}
+
+photo > img
+{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+
+description
+{
+    display: inline;
+    font-size: 20px;
+    text-align: left;
+    padding: 0px 30px 30px 30px;
+}
+
+description > h1 > a > img
+{
+    width: 35px;
+    height: 35px;
 }
