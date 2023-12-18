@@ -13,8 +13,8 @@ function updateChart1()
 {
     async function fetchData1()
     {
-        const url = 'Swieczki (2).json';
-        //const url = 'https://my.api.mockaroo.com/swieczki.json?key=e8c704d0';
+        //const url = 'Swieczki (2).json';
+        const url = 'https://my.api.mockaroo.com/swieczki.json?key=e8c704d0';
         const response = await fetch(url);
         //wait until the request has been completed
         const datapoints = await response.json();
