@@ -1,8 +1,8 @@
 let outsideCandles;
 let outsideClients;
 
-fetch('https://my.api.mockaroo.com/swieczki.json?key=e8c704d0')
-//fetch('Swieczki.json')
+//fetch('https://my.api.mockaroo.com/swieczki.json?key=e8c704d0')
+fetch('Swieczki (2).json')
   .then(res => res.json())
   .then(data => {
     outsideCandles = data;
@@ -16,7 +16,8 @@ fetch('https://my.api.mockaroo.com/swieczki.json?key=e8c704d0')
   });
 
 //fetch('Klienci.json')
-fetch('https://my.api.mockaroo.com/klienci.json?key=e8c704d0')
+fetch('Klienci (2).json')
+//fetch('https://my.api.mockaroo.com/klienci.json?key=e8c704d0')
   .then(res => res.json())
   .then(data =>{
     outsideClients = data;

@@ -13,10 +13,10 @@ html, body
 nav
 {
     position: fixed;
-    width: 38vw;
+    width: 46vw;
     border-radius: 40px;
     top: 40px;
-    left: 30vw;
+    left: 25vw;
     padding: 20px;
     background-color: white;
     -webkit-box-shadow: 0px 0px 28px -19px white;
@@ -38,7 +38,7 @@ nav > div > span
 
 .button {
     display: inline-block;
-    padding: 5px ;
+    padding: 5px 20px 5px 20px;
     border-radius: 10rem;
     color: #fff;
     text-transform: uppercase;
@@ -172,8 +172,8 @@ div#image > img
 main1 > div > div#text
 {
     position: absolute;
-    top:250px;
-    left: 100px;
+    top: 300px;
+    left: 190px;
     width: 30vw;
     text-align: center;
     color:white;
@@ -417,4 +417,75 @@ description > h1 > a > img
 {
     width: 35px;
     height: 35px;
+}
+
+div.databutton
+{
+    margin: auto;
+    width: 40%;
+    text-align: center;
+    margin-top: 100px;
+}
+
+div.databutton > button
+{
+    color:#a74800C0;
+    padding: 30px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    border: 2px solid rgba(167, 73, 0, 0.6);
+    font-family: 'Quicksand', sans-serif;
+    border-radius: 25px;
+    margin: 50px 0px 20px 0px;
+    cursor: pointer;
+    background-color: white;
+}
+
+table
+{
+    /* border: 1.4px solid black; */
+    border-radius: 20px;
+    padding: 30px;
+}
+
+th
+{
+    padding: 10px;
+    text-align: center;
+    background-color: #a7480040;
+    border-radius: 5px;
+    font-size: 16px;
+    font-style: bold;
+}
+
+tr
+{
+    background-color: #a7480019;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+tr:nth-child(even)
+{
+    background-color: #a7480030;
+}
+
+td
+{
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+div#table1
+{
+    margin: auto;
+    width: 50%;
+}
+
+div#table2
+{
+    margin: auto;
+    width: 33%;
 }

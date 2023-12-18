@@ -13,7 +13,8 @@ function updateChart1()
 {
     async function fetchData1()
     {
-        const url = 'https://my.api.mockaroo.com/swieczki.json?key=e8c704d0';
+        const url = 'Swieczki (2).json';
+        //const url = 'https://my.api.mockaroo.com/swieczki.json?key=e8c704d0';
         const response = await fetch(url);
         //wait until the request has been completed
         const datapoints = await response.json();
@@ -55,8 +56,9 @@ function updateChart1()
         console.log(veke);
 
         const sold = [ljus, lykta, stjarna, takfonster, gryning, glans, lagereld, veke];
+        const labels1 = ['Ljus', 'Lykta', 'Stjärna', 'Takfönster', 'Gryning', 'Glans', 'Lägereld', 'Veke'];
 
-
+        myChart1.data.labels = labels1;
         myChart1.data.datasets[0].data = sold;
         myChart1.update();
 
@@ -64,7 +66,7 @@ function updateChart1()
 };
 
 const data2 = {
-    labels: ['Ljus', 'Lykta', 'Stjärna', 'Takfönster', 'Gryning', 'Glans', 'Lägereld', 'Veke'],
+    labels: [],
     datasets: 
     [{
         label: [],
@@ -96,14 +98,7 @@ const data2 = {
 
 const configure = {
     type: 'polarArea',
-    data: data2,
-    options: 
-    {
-        scales: 
-        {
-        y: {beginAtZero: true}
-        }
-    }
+    data: data2
 };
 
 const myChart1 = new Chart(

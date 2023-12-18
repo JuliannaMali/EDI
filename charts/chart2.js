@@ -29,7 +29,8 @@ function updateChart2()
 {
     async function fetchData2()
     {
-        const url = 'https://my.api.mockaroo.com/klienci.json?key=e8c704d0';
+        const url = 'Klienci (2).json';
+        //const url = 'https://my.api.mockaroo.com/klienci.json?key=e8c704d0';
         const response = await fetch(url);
         const datapoints2 = await response.json();
         console.log(datapoints2);
@@ -123,9 +124,13 @@ function updateChart2()
         console.log(kokos_m);
         console.log(kokos_f);
 
-        const bought_by_gender = [lawenda_m, lawenda_f, wanilia_m, wanilia_f, jablko_cynamon_m, jablko_cynamon_f, pomarancza_gozdziki_m, pomarancza_gozdziki_f, trawa_cytrynowa_m, trawa_cytrynowa_f, grejpfrut_m, grejpfrut_f, mieta_m, mieta_f, hiacynt_m, hiacynt_f, jasmin_m, jasmin_f, fiolek_m, fiolek_f, swierk_m, swierk_f, sosna_m, sosna_f, kokos_m, kokos_f]
+        const bought_by_gender1 = [lawenda_m,wanilia_m,jablko_cynamon_m, pomarancza_gozdziki_m, trawa_cytrynowa_m, grejpfrut_m, mieta_m, hiacynt_m, jasmin_m, fiolek_m, swierk_m, sosna_m,kokos_m];
+        const bought_by_gender2 = [lawenda_f,wanilia_f, jablko_cynamon_f,pomarancza_gozdziki_f, trawa_cytrynowa_f, grejpfrut_f, mieta_f, hiacynt_f, jasmin_f, fiolek_f, swierk_f,sosna_f, kokos_f];
+        const labls2= ['Lawenda', 'Wanilia', 'Jabłko-cynamon', 'Pomarańcza-goździki', 'Trawa cytrynowa', 'Grejpfrut', 'Mięta', 'Hiacynt', 'Jaśmin', 'Fiołek', 'Świerk', 'Sosna', 'Kokos'];
 
-        myChart2.config.data.datasets[0].data = bought_by_gender;
+        myChart2.data.labels = labls2;
+        myChart2.config.data.datasets[0].data = bought_by_gender1;
+        myChart2.config.data.datasets[1].data = bought_by_gender2;
         myChart2.update();
         
     });
@@ -133,70 +138,21 @@ function updateChart2()
 
 
 const data = {
-  labels: ['Lawenda - Mężczyźni','Lawenda - Kobiety', 'Wanilia - Mężczyźni', 'Wanilia - Kobiety', 'Jabłko-cynamon - Mężczyźni', 'Jabłko-cynamon - Kobiety', 'Pomarańcza-goździki - Mężczyźni', 'Pomarańcza-Goździki - Kobiety', 'Trawa cytrynowa - Mężczyźni', 'Trawa cytrynowa - Kobiety', 'Grejpfrut - Mężczyźni', 'Grejpfrut - Kobiety', 'Mięty - Mężczyźni', 'Mięta - Kobiety', 'Hiacynt - Mężczyźni', 'Hiacynt - Kobiety', 'Jaśmin - Mężczyźni', 'Jaśmin - Kobiety', 'Fiołek - Mężczyźni', 'Fiołek - Kobiety', 'Świerk - Mężczyźni', 'Świerk - Kobiety', 'Sosna - Mężczyźni', 'Sosna - Kobiety', 'Kokos - Mężczyźni', 'Kokos - Kobiety'],
+  labels: [],
   datasets: 
   [{
-    label: [],
+    label: 'Mężczyźni',
     data: [],
-    backgroundColor: 
-    [
-      'rgba(54, 162, 235, 0.2)',
-      'rgba(255,26,104, 0.2)',
-      'rgba(54, 162, 235, 0.2)',
-      'rgba(255,26,104, 0.2)',
-      'rgba(54, 162, 235, 0.2)',
-      'rgba(255,26,104, 0.2)',
-      'rgba(54, 162, 235, 0.2)',
-      'rgba(255,26,104, 0.2)',
-      'rgba(54, 162, 235, 0.2)',
-      'rgba(255,26,104, 0.2)',
-      'rgba(54, 162, 235, 0.2)',
-      'rgba(255,26,104, 0.2)',
-      'rgba(54, 162, 235, 0.2)',
-      'rgba(255,26,104, 0.2)',
-      'rgba(54, 162, 235, 0.2)',
-      'rgba(255,26,104, 0.2)',
-      'rgba(54, 162, 235, 0.2)',
-      'rgba(255,26,104, 0.2)',
-      'rgba(54, 162, 235, 0.2)',
-      'rgba(255,26,104, 0.2)',
-      'rgba(54, 162, 235, 0.2)',
-      'rgba(255,26,104, 0.2)',
-      'rgba(54, 162, 235, 0.2)',
-      'rgba(255,26,104, 0.2)',
-      'rgba(54, 162, 235, 0.2)',
-      'rgba(255,26,104, 0.2)'
-    ],
-    borderColor: 
-    [
-      'rgba(54, 162, 235, 1)',
-      'rgba(255,26,104, 1)',
-      'rgba(54, 162, 235, 1)',
-      'rgba(255,26,104, 1)',
-      'rgba(54, 162, 235, 1)',
-      'rgba(255,26,104, 1)',
-      'rgba(54, 162, 235, 1)',
-      'rgba(255,26,104, 1)',
-      'rgba(54, 162, 235, 1)',
-      'rgba(255,26,104, 1)',
-      'rgba(54, 162, 235, 1)',
-      'rgba(255,26,104, 1)',
-      'rgba(54, 162, 235, 1)',
-      'rgba(255,26,104, 1)',
-      'rgba(54, 162, 235, 1)',
-      'rgba(255,26,104, 1)',
-      'rgba(54, 162, 235, 1)',
-      'rgba(255,26,104, 1)',
-      'rgba(54, 162, 235, 1)',
-      'rgba(255,26,104, 1)',
-      'rgba(54, 162, 235, 1)',
-      'rgba(255,26,104, 1)',
-      'rgba(54, 162, 235, 1)',
-      'rgba(255,26,104, 1)',
-      'rgba(54, 162, 235, 1)',
-      'rgba(255,26,104, 1)'
-    ]
-  }]
+    backgroundColor: 'rgba(54, 162, 235, 0.3)',
+    borderColor: 'rgba(54, 162, 235, 1)'
+  },
+  {
+    label: 'Kobiety',
+    data: [],
+    backgroundColor: 'rgba(255,26,104, 0.3)',
+    borderColor: 'rgba(255,26,104, 1)'
+  }
+  ]
 };
 
 const config = {
