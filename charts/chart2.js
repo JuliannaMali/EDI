@@ -29,8 +29,8 @@ function updateChart2()
 {
     async function fetchData2()
     {
-        const url = 'Klienci (2).json';
-        //const url = 'https://my.api.mockaroo.com/klienci.json?key=e8c704d0';
+        //const url = 'Klienci (2).json';
+        const url = 'https://my.api.mockaroo.com/klienci.json?key=e8c704d0';
         const response = await fetch(url);
         const datapoints2 = await response.json();
         console.log(datapoints2);
