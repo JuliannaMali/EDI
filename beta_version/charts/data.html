@@ -1,0 +1,78 @@
+<html>
+<head>
+    <link rel="stylesheet" href="../code/style.css">
+
+</head>
+<body>
+  <nav>
+      <div>
+          <span><a href="../code/index.html" class="button">Główna</a></span>
+          <span><a href="../sub/about.html" class="button">O nas</a></span>
+          <span><a href="" class="button">O świeczkach</a></span>
+          <span><a href="../charts/data.html" class="button">Dane</a></span>
+      </div>
+  </nav>
+  <header>
+    <img src="../everything_else/logo.PNG" alt="logo">
+  </header>
+  <div class="databutton">
+      <button onclick="updateChart1()">Liczba sprzedanych egzemplarzy w zależności od modelu</button>
+      <canvas id="myChart1"></canvas>
+  </div>
+
+  <div class="databutton">
+      <button onclick="updateChart2()">Liczba osób, która zakupiła konkretny model, w zależności od płci</button>
+      <canvas id="myChart2"></canvas>
+  </div>
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <script src="chart1.js"></script>
+    <script src="chart2.js"></script>
+    <script type="text/javascript" src="tables.js"></script>
+
+  
+  <div id="table1">  
+    <table>
+        <thead>
+            <tr>
+                <th>Model</th>
+                <th>Wielkość</th>
+                <th>Zapach</th>
+                <th>Wosk</th>
+                <th>Dostępność</th>
+                <th>Kod</th>
+                <th>Ilość Sprzedanych</th>
+                <th>Data Ostatniej Sprzedaży</th>
+            </tr>
+        </thead>
+        <tbody id="tableCandles">
+        </tbody>
+    </table>
+  </div>
+
+  <div id="table2">
+      <table>
+        <thead>
+            <tr>
+                <th>Imię</th>
+                <th>Nazwisko</th>
+                <th>Email</th>
+                <th>Płeć</th>
+            </tr>
+        </thead>
+        <tbody id="tableClients">
+        </tbody> 
+      </table>
+  </div>
+  <footer>
+    <img src="../everything_else/logo.PNG" alt="">
+    <h1>&copy; Najlepsza Grupa Projektowa</h1>
+    <div id="container">
+        <div><img src="../everything_else/git.png"><a target="_blank" href="https://github.com/JuliannaMali/EDI"> GitHub</a></div>
+        <div><img src="../everything_else/uek.png"><a target="_blank" href="https://uek.krakow.pl/"> UEK</a></div>
+        <div>2023/2024</div>
+    </div>
+</footer>
+
+</body>
+</html>
