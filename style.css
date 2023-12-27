@@ -314,3 +314,12 @@ a > img
   .nav-link:hover:before {
     width: 100%;
   }
+#myNavbar {
+    transition: transform 0.5s; /* Dodaj płynny efekt przejścia */
+    position: fixed;
+  }
+  
+#myNavbar.hidden {
+    transform: translateY(-100%); /* Przesuń nawigację poza ekran w górę */
+    display: none;
+  }
