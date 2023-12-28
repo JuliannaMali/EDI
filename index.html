@@ -11,7 +11,7 @@
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 </head>
 <body>
-    <nav class="shadow navbar navbar-expand-lg bg-body-tertiary fixed-top">
+    <nav class="shadow navbar navbar-expand-lg bg-body-tertiary fixed-top" id="myNavbar">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="images/favicon.png" alt="logo_ef" width="36px" height="36px">
@@ -239,16 +239,16 @@
 
     <div style="background-color: #ffe8d660; padding-bottom: 50px;">
         <h1 class="text-center pt-5">Dane wygenerowane za pomocą strony <a href="https://popcat.click/" target="_blank">Mockaroo</a></h1>
-        <div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
+        <div class="d-flex justify-content-center align-items-center" style="height: 110vh;">
             <div class="databutton">
-                <button class="btn btn-light border" type="button" onclick="updateChart1()">Liczba sprzedanych egzemplarzy w zależności od modelu</button>
+                <button class="button" type="button" onclick="updateChart1()">Liczba sprzedanych egzemplarzy w zależności od modelu</button>
                 <br><br><canvas id="myChart1"></canvas>
             </div>
         </div>
 
-        <div class="d-flex justify-content-center align-items-center" style="height: 100vh; margin-top:-30vh">
+        <div class="d-flex justify-content-center align-items-center" style="height: 100vh; margin-top:-15vh">
             <div class="databutton">
-                <button class="btn btn-light border" onclick="updateChart2()">Liczba osób, która zakupiła konkretny model, w zależności od płci</button>
+                <button class="button2" onclick="updateChart2()">Liczba osób, która zakupiła konkretny model, w zależności od płci</button>
                 <br><br><br><canvas id="myChart2"></canvas>
             </div>
         </div>
@@ -312,25 +312,6 @@
     <script src="js/tables.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <script>
-    let mybutton = document.getElementById("myBtn");
-
-      // Gdy użytkownik przejdzie w dół 30px, pojawi się przycisk
-      window.onscroll = function() {scrollFunction()};
-      
-      function scrollFunction() {
-        if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
-          mybutton.style.display = "block";
-        } else {
-          mybutton.style.display = "none";
-        }
-      }
-      
-      // Jak użytkownik kliknie w przycisk, strona pójdzie w górę
-      function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-      }
-      </script>
+    
 </body>
 </html>
