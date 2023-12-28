@@ -39,8 +39,8 @@ p#opentext
     width: 60vw;
     text-align: center;
     color:white;
-    font-size: calc(0.3rem + 1.3vw);
-    background-color: rgba(255, 255, 255, 0.1);
+    font-size: calc(0.3rem + 1.5vw);
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 15px 1vw 15px 1vw;
     border-radius: 40px;
     letter-spacing: 1.6px;
@@ -121,7 +121,9 @@ a > img
     width: 24px;
     height: 24px;
 }
-#myBtn {
+
+#myBtn 
+{
     display: none;
     position: fixed;
     bottom: 20px;
@@ -148,7 +150,7 @@ a > img
     -webkit-box-shadow: 0px 0px 36px 0px rgba(167, 126, 88, 1);
     -moz-box-shadow: 0px 0px 36px 0px rgba(167, 126, 88, 1);
     box-shadow: 0px 0px 36px 0px rgba(167, 126, 88, 1);
-    }
+}
   
   #myBtn:hover {
     background-color: white;
@@ -323,3 +325,32 @@ a > img
     transform: translateY(-100%); /* Przesuń nawigację poza ekran w górę */
     display: none;
   }
+
+h6
+{
+  color: var(--main-color) !important;
+  font-weight: 900 !important;
+}
+
+.accordion-button:not(.collapsed)
+{
+  background-color: var(--second-color) !important;
+}
+
+.accordion-button:focus
+{
+  -webkit-box-shadow: inset 0px 0px 8px 0px var(--main-color) !important;
+  -moz-box-shadow:    inset 0px 0px 8px 0px var(--main-color) !important;
+  box-shadow:         inset 0px 0px 8px 0px var(--main-color) !important;
+}
+
+div#collapseTwo > div.accordion-body > p
+{
+  text-align: justify;
+}
+
+div.carousel-item > img
+{
+  height: 60vh;
+  object-fit: cover;
+}

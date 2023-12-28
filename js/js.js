@@ -48,20 +48,6 @@ window.onscroll = function() {
   // Obsługa znikania nawigacji
   let currentScrollPos = window.scrollY;
 
-  if (currentScrollPos > 30) {
-    // Pokaż nawigację tylko gdy przewinięcie jest w dół i użytkownik jest wystarczająco w dół strony
-    if (prevScrollPos > currentScrollPos) {
-      // Przewinięcie w górę
-      navbar.classList.remove('hidden');
-    } else {
-      // Przewinięcie w dół
-      navbar.classList.add('hidden');
-    }
-  } else {
-    // Ustaw nawigację jako widoczną, gdy użytkownik jest blisko góry strony
-    navbar.classList.remove('hidden');
-  }
-
   prevScrollPos = currentScrollPos;
 };
 
